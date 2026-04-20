@@ -3,6 +3,7 @@ import { fileURLToPath } from "url";
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
+import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -12,6 +13,9 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
+    ViteImageOptimizer({
+      includePublic: true
+    })
   ],
   resolve: {
     alias: {
@@ -31,8 +35,10 @@ export default defineConfig({
 
     rollupOptions: {
       output: {
-        manualChunks: {
-          vendor: ["react", "react-dom"],
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            return 'vendor';
+          }
         },
       },
     },
