@@ -44,5 +44,5 @@ export default defineConfig({
     drop: ["console", "debugger"], // remove logs em produção
   },
 
-  base: "/",
+  base: "/estudio-casa-de-vo/",
 });
