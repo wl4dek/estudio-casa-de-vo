@@ -18,13 +18,13 @@ export const AboutSection = () => {
                         <div className="relative">
                             <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-xl">
                                 <img
-                                    src="/images/service-maternity.jpg"
+                                    src="images/service-maternity.jpg"
                                     alt="Fotografia em Estúdio"
                                     className="w-full h-full object-cover filter sepia-[0.1]"
                                 />
                             </div>
                             <div className="absolute -bottom-8 -right-8 w-48 h-48 bg-white rounded-2xl p-4 shadow-xl hidden md:block">
-                                <img src="/images/service-newborn.jpg" alt="Detalhe Newborn" className="w-full h-full object-cover rounded-xl" />
+                                <img src="images/service-newborn.jpg" alt="Detalhe Newborn" className="w-full h-full object-cover rounded-xl" />
                             </div>
                         </div>
                     </motion.div>

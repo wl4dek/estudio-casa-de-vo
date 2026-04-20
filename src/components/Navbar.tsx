@@ -18,13 +18,13 @@ export const Navbar = () => {
     return (
         <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-brand-light/95 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'}`}>
             {isScrolled ? (<div
-                className="absolute inset-0 bg-[url('/images/gradiente.jpg')] bg-cover opacity-25"
+                className="absolute inset-0 bg-[url('images/gradiente.jpg')] bg-cover opacity-25"
                 aria-hidden="true"
             ></div>) : ''}
             <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
                 <a href="#" className="flex items-center gap-3 group">
                     <div className="w-14 h-14 rounded-full overflow-hidden border border-brand-sand shadow-sm bg-white flex items-center justify-center">
-                        <img src="/images/logo.png" alt="Estúdio Casa de Vó" className="w-10 h-10 object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <img src="images/logo.png" alt="Estúdio Casa de Vó" className="w-10 h-10 object-cover group-hover:scale-105 transition-transform duration-500" />
                     </div>
                     <span className={`font-serif text-xl md:text-2xl font-semibold tracking-wide ${isScrolled ? 'text-brand-dark' : 'text-brand-dark md:text-white'}`}>
                         Casa de Vó
