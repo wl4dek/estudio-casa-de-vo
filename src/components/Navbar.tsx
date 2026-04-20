@@ -18,8 +18,9 @@ export const Navbar = () => {
     return (
         <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-brand-light/95 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'}`}>
             {isScrolled ? (<div
-                className="absolute inset-0 bg-[url('images/gradiente.jpg')] bg-cover opacity-25"
+                className="absolute inset-0 bg-cover opacity-25"
                 aria-hidden="true"
+                style={{ backgroundImage: "url('images/gradiente.jpg')" }}
             ></div>) : ''}
             <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
                 <a href="#" className="flex items-center gap-3 group">

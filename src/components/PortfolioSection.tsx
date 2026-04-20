@@ -1,11 +1,15 @@
 import { motion } from 'framer-motion';
-import { fadeIn, handlerOnClickService, annimateDescription } from '@/hooks';
+import { fadeIn } from '@/hooks';
 import { services } from '@/data'
 import { useState } from "react";
-
+import { ServiceModal } from './ServiceModal';
 
 export const PortfolioSection = () => {
-    const [active, setActive] = useState<string>('');
+    const [selectedService, setSelectedService] = useState<typeof services[0] | null>(null);
+
+    const handleServiceClick = (service: typeof services[0]) => {
+        setSelectedService(service);
+    };
 
     return (
         <section id="portfolio" className="py-24 bg-brand-light relative">
@@ -34,7 +38,7 @@ export const PortfolioSection = () => {
                             transition={{ duration: 0.6, delay: service.delay }}
                             className="group cursor-pointer"
                             id={`${index}`}
-                            onClick={() => handlerOnClickService(service.title, active, setActive)}
+                            onClick={() => handleServiceClick(service)}
                         >
                             <div className="relative overflow-hidden rounded-2xl aspect-[4/3] mb-6 shadow-md">
                                 <img
@@ -46,14 +50,6 @@ export const PortfolioSection = () => {
                                 <div className="absolute bottom-6 left-6 right-6 flex justify-between items-end">
                                     <div className="bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg">
                                         <h3 className="font-serif text-2xl text-brand-dark mb-1">{service.title}</h3>
-                                        <motion.p
-                                            id={`description-${service.title.toLowerCase()}`}
-                                            initial={{ opacity: 0, height: 0 }}
-                                            animate={annimateDescription(service.title, active)}
-                                            transition={{ duration: 0.4 }}
-                                            className="overflow-hidden font-body text-sm text-brand-brown whitespace-pre-line">
-                                            {service.description}
-                                        </motion.p>
                                     </div>
                                 </div>
                             </div>
@@ -61,6 +57,12 @@ export const PortfolioSection = () => {
                     ))}
                 </div>
             </div>
-        </section>
+
+            <ServiceModal
+                isOpen={!!selectedService}
+                onClose={() => setSelectedService(null)}
+                service={selectedService}
+            />
+        </section >
     );
 };
