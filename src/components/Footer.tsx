@@ -6,7 +6,7 @@ export const Footer = () => {
             <div className="max-w-7xl mx-auto px-6">
                 <div className="flex flex-col items-center justify-center gap-6">
                     <div className="w-26 h-26 rounded-full overflow-hidden border border-brand-sand/30 bg-white p-3">
-                        <img src="/images/logo.png" alt="Estúdio Casa de Vó" className="w-full h-full" />
+                        <img src="images/logo.png" alt="Estúdio Casa de Vó" className="w-full h-full" />
                     </div>
                     <p className="text-brand-sand/60 font-body text-sm max-w-md">
                         Estúdio fotográfico especializado em ensaios de gestante, acompanhamentos e cobertura de eventos infantis em Macaé.
