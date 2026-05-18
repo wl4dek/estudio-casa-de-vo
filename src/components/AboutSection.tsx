@@ -18,13 +18,13 @@ export const AboutSection = () => {
                         <div className="relative">
                             <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-xl">
                                 <img
-                                    src="images/service-maternity.jpg"
+                                    src="images/bia-rosa.jpeg"
                                     alt="Fotografia em Estúdio"
                                     className="w-full h-full object-cover filter sepia-[0.1]"
                                 />
                             </div>
                             <div className="absolute -bottom-8 -right-8 w-48 h-48 bg-white rounded-2xl p-4 shadow-xl hidden md:block">
-                                <img src="images/service-newborn.jpg" alt="Detalhe Newborn" className="w-full h-full object-cover rounded-xl" />
+                                <img src="images/studio.jpeg" alt="Detalhe Newborn" className="w-full h-full object-cover rounded-xl" />
                             </div>
                         </div>
                     </motion.div>
@@ -41,13 +41,14 @@ export const AboutSection = () => {
 
                         <div className="space-y-6 text-brand-dark/80 font-body text-lg leading-relaxed">
                             <p>
-                                O <strong className="text-brand-dark">Estúdio Casa de Vó</strong> nasceu de um sonho: criar um espaço onde as famílias pudessem se sentir literalmente <span className="italic">na casa de vó</span>. Um ambiente aconchegante, seguro, cheio de carinho e afeto.
+                                O <strong className="text-brand-dark">Estúdio Casa de Vó</strong> nasceu de um sonho:
+                                criar um espaço onde a fotografia de excelência se une ao acolhimento. Um ambiente seguro, sofisticado e cheio de afeto, projetado para que cada cliente se sinta verdadeiramente acolhido e confortável.
                             </p>
                             <p>
-                                Localizado em Macaé, Rio de Janeiro, nosso estúdio foi todo pensado e preparado para receber desde bebês recém-nascidos até as gestantes mais radiantes. Nossa estrutura conta com climatização ideal para o bebê, higienização rigorosa e todos os acessórios para ensaios belíssimos.
+                                Localizado em Macaé, RJ, e idealizado pelas irmãs Beatriz e Rosa Maria Leandro, nosso estúdio foi cuidadosamente estruturado para receber desde a espontaneidade do público infantil até a força e autoridade de ensaios corporativos. Nossa infraestrutura moderna conta com espaços totalmente acessíveis, climatização ideal e um acervo exclusivo para garantir produções impecáveis.
                             </p>
                             <p>
-                                Acreditamos que a fotografia vai além do clique. É sobre contar a história da sua família com sensibilidade, capturando os sorrisos espontâneos, os olhares de amor e os detalhes que passam tão rápido.
+                                Acreditamos que a fotografia vai muito além do clique. É sobre contar a história da sua família ou da sua carreira com sensibilidade, capturando a essência, os olhares sinceros e os detalhes fundamentais para representar você através de imagens de altíssima qualidade.
                             </p>
                         </div>
 
