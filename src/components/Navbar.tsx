@@ -18,7 +18,7 @@ export const Navbar = () => {
     return (
         <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-brand-light/95 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'}`}>
             {isScrolled ? (<div
-                className="absolute inset-0 bg-cover opacity-25"
+                className="absolute inset-0 bg-cover opacity-25 pointer-events-none"
                 aria-hidden="true"
                 style={{ backgroundImage: "url('images/gradiente.jpg')" }}
             ></div>) : ''}

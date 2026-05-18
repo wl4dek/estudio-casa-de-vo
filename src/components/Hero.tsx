@@ -19,7 +19,7 @@ export const Hero = () => {
             <div className="absolute inset-0 w-full h-full">
                 <img
                     src="images/principal.jpeg"
-                    alt="Bebê recém-nascido dormindo em ensaio newborn"
+                    alt="Uma avó segurando um livro, mostrando para uma criança sentada ao seu lado, ambos sorrindo e imersos na leitura, com um cenário de natureza ao fundo."
                     className="w-full h-full object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-brand-dark/30 md:bg-brand-dark/20 mix-blend-multiply"></div>
