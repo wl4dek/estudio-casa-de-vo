@@ -43,7 +43,7 @@ export const ServiceModal = ({ isOpen, onClose, service }: ServiceModalProps) =>
                                 <button
                                     type="button"
                                     onClick={onClose}
-                                    className="absolute top-4 right-4 bg-white/90 p-2 rounded-full hover:bg-white transition-colors"
+                                    className="absolute top-5 right-5 bg-white/90 p-2 rounded-full hover:bg-white transition-colors"
                                 >
                                     <X size={24} className="text-brand-dark" />
                                 </button>

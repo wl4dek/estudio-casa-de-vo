@@ -41,11 +41,10 @@ export const PortfolioSection = () => {
                             onClick={() => handleServiceClick(service)}
                         >
                             <div className="relative overflow-hidden rounded-2xl aspect-[4/3] mb-6 shadow-md">
-                                <img
-                                    src={service.image}
-                                    alt={service.title}
-                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                                />
+                                <picture>
+                                    <source srcSet={service.imageWebP} type="image/webp" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                                    <img src={service.image} alt={service.title} loading="lazy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                                </picture>
                                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-500"></div>
                                 <div className="absolute bottom-6 left-6 right-6 flex justify-between items-end">
                                     <div className="bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg">
