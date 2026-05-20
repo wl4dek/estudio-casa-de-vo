@@ -46,9 +46,5 @@ export default defineConfig({
     chunkSizeWarningLimit: 500,
   },
 
-  esbuild: {
-    drop: ["console", "debugger"], // remove logs em produção
-  },
-
   base: "/",
 });

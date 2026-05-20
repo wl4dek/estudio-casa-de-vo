@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { MapPin } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
-import { whatsAppUrl } from '@/utils';
+import { whatsAppUrl, phone } from '@/utils';
 
 export const ContactSection = () => {
     return (
@@ -29,7 +29,7 @@ export const ContactSection = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-serif text-xl mb-1">WhatsApp</h4>
-                                    <p className="text-brand-sand hover:text-white transition-colors cursor-pointer">(22) 99239-2537</p>
+                                    <p className="text-brand-sand hover:text-white transition-colors cursor-pointer">{phone}</p>
                                     <span className="text-sm text-brand-sand/60 block mt-1">Seg a Sex: 09h às 18h</span>
                                 </div>
                             </a>
