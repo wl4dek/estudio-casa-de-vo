@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pré-Vendas às Cegas — Estúdio Casa de Vó</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      min-height: 100dvh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #4A3F3A;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .video-wrapper {
+      width: 100%;
+      max-width: 960px;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .video-wrapper h1 {
+      color: #F7F5F0;
+      font-size: clamp(1.25rem, 3vw, 1.75rem);
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .video-container {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 0.75rem;
+      overflow: hidden;
+      background: #000;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    }
+
+    .video-container video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <main class="video-wrapper">
+    <h1>Pré-Vendas às Cegas</h1>
+    <div class="video-container">
+      <video controls preload="metadata" playsinline>
+        <source src="/videos/pre-vendas-as-cegas.mp4" type="video/mp4" />
+        Seu navegador não suporta a reprodução de vídeos.
+      </video>
+    </div>
+  </main>
+</body>
+</html>
